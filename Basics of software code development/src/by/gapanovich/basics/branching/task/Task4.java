@@ -1,4 +1,4 @@
-package by.gapanovich.basics.branching;
+package by.gapanovich.basics.branching.task;
 
 /*
     Task:
