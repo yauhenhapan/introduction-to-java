@@ -19,11 +19,11 @@ public class Task3 {
         System.out.println("Result = " + findValue(x, y));
     }
 
-    private static double findValue(double x, double y){
+    public static double findValue(double x, double y){
         return ( ( Math.sin(x) + Math.cos(y) ) / ( Math.cos(x) - Math.sin((y)) )  * Math.tan(x*y));
     }
 
-    private static double enterDouble(InputStream input){
+    public static double enterDouble(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextDouble();
     }

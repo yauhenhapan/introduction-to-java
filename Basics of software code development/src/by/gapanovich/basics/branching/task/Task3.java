@@ -23,7 +23,7 @@ public class Task3 {
         System.out.println("Points lie on one straight line: " + isPointOnLine(pointA, pointB, pointC));
     }
 
-    private static Point enterCoordinates(InputStream input){
+    public static Point enterCoordinates(InputStream input){
         Scanner scan = new Scanner(input);
         System.out.print("x = ");
         int x = scan.nextInt();
@@ -32,7 +32,7 @@ public class Task3 {
         return new Point(x, y);
     }
 
-    private static boolean isPointOnLine(Point firstPoint, Point secondPoint, Point thirdPoint){
+    public static boolean isPointOnLine(Point firstPoint, Point secondPoint, Point thirdPoint){
         return (thirdPoint.getX() * (secondPoint.getY() - firstPoint.getY()) -
                 thirdPoint.getY() * (secondPoint.getX() - firstPoint.getX()) ==
                 firstPoint.getX() * secondPoint.getY() - secondPoint.getX() * firstPoint.getY());

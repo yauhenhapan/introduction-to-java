@@ -21,12 +21,12 @@ public class Task6 {
         System.out.println("Point " + "(" + x + ";" + y + ")" + " belongs to area:" + isBelong(x,y));
     }
 
-    private static int enterCoordinate(InputStream input){
+    public static int enterCoordinate(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextInt();
     }
 
-    private static boolean isBelong(int x, int y){
+    public static boolean isBelong(int x, int y){
         return (x >= -2 && x <= 2 && y >= 0 && y <= 4) || (x >= -4 && x <= 4 && y >= -3 && y <= 0);
     }
 }

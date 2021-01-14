@@ -14,7 +14,7 @@ public class Task4 {
         System.out.printf("%.3f", swapFractionalAndWholeParts(NUMBER));
     }
 
-    private static double swapFractionalAndWholeParts(double number){
+    public static double swapFractionalAndWholeParts(double number){
         return ( number - Math.floor(number) ) * 1000 + Math.floor(number) * 0.001;
     }
 }

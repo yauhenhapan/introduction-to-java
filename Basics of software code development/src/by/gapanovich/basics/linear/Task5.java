@@ -27,30 +27,30 @@ public class Task5 {
         }
     }
 
-    private static int enterSeconds(InputStream input){
+    public static int enterSeconds(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextInt();
     }
 
-    private static int convertTimeFromSecondsToHours(int seconds){
+    public static int convertTimeFromSecondsToHours(int seconds){
         if (seconds < 3600){
             return 0;
         }
         return seconds / 3600;
     }
 
-    private static int convertTimeFromSecondsToMinutes(int seconds){
+    public static int convertTimeFromSecondsToMinutes(int seconds){
         if (seconds < 60){
             return 0;
         }
         return (seconds - convertTimeFromSecondsToHours(seconds) * 3600) / 60;
     }
 
-    private static int convertTimeToSeconds(int seconds){
+    public static int convertTimeToSeconds(int seconds){
         return seconds - (convertTimeFromSecondsToHours(seconds) * 3600) - (convertTimeFromSecondsToMinutes(seconds) * 60);
     }
 
-    private static boolean areCorrectSeconds(int seconds){
+    public static boolean areCorrectSeconds(int seconds){
         return seconds >= 0;
     }
 }

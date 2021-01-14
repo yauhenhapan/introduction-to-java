@@ -26,12 +26,12 @@ public class Task4 {
         System.out.println("Will the brick go through the hole: " + isFitBrick(A, B, x, y, z));
     }
 
-    private static boolean isFitBrick(double A, double B, double x, double y, double z){
+    public static boolean isFitBrick(double A, double B, double x, double y, double z){
         return (x <= A && y <= B) || (x <= B && y <= A) || (x <= A && z <= B) || (z <= A && x <= B) || (y <= A && z <= B) &&
                 (z <= A && y <= B);
     }
 
-    private static double enterValue(InputStream input){
+    public static double enterValue(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextDouble();
     }

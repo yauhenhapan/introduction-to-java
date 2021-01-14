@@ -31,16 +31,16 @@ public class Task1 {
         }
     }
 
-    private static int enterAngle(InputStream input){
+    public static int enterAngle(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextInt();
     }
 
-    private static boolean isExistTriangle(int firstAngle, int secondAngle){
+    public static boolean isExistTriangle(int firstAngle, int secondAngle){
         return firstAngle > 0 && secondAngle > 0 && (firstAngle + secondAngle) < 180;
     }
 
-    private static int findRemainingAngle(int firstAngle, int secondAngle){
+    public static int findRemainingAngle(int firstAngle, int secondAngle){
         return 180 - firstAngle - secondAngle;
     }
 }

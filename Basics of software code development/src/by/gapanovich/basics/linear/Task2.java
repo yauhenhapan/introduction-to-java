@@ -22,12 +22,12 @@ public class Task2 {
         System.out.println("Result:" + findValue(firstNumber, secondNumber, thirdNumber));
     }
 
-    private static double enterDouble(InputStream input){
+    public static double enterDouble(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextDouble();
     }
 
-    private static double findValue(double a, double b, double c) throws IOException {
+    public static double findValue(double a, double b, double c) throws IOException {
         if(isCorrectValues(a, b, c)){
             return  ((b + Math.sqrt(Math.pow(b,2) + 4*a*c)) / 2*a ) - Math.pow(a,3) + 1/Math.pow(b,2);
         } else {
@@ -35,7 +35,7 @@ public class Task2 {
         }
     }
 
-    private static boolean isCorrectValues(double a, double b, double c){
+    public static boolean isCorrectValues(double a, double b, double c){
         return a != 0 && b != 0 && (Math.pow(b,2) + 4*a*c) >= 0;
     }
 }

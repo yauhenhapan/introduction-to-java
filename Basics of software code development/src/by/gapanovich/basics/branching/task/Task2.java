@@ -22,12 +22,12 @@ public class Task2 {
         System.out.println("max{min(a, b), min(c, d)} = " + findMaxFromTwoMin(a, b, c ,d));
     }
 
-    private static int enterNumber(InputStream input){
+    public static int enterNumber(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextInt();
     }
 
-    private static int findMaxFromTwoMin(int a, int b, int c, int d){
+    public static int findMaxFromTwoMin(int a, int b, int c, int d){
         return Math.max(Math.min(a, b), Math.min(c, d));
     }
 }

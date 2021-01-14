@@ -18,14 +18,14 @@ public class Task5 {
         System.out.print("The result of function = " + findValueFunc(x));
     }
 
-    private static double findValueFunc(double x){
+    public static double findValueFunc(double x){
         if (x <= 3) {
             return Math.pow(x, 2) - 3 * x + 9;
         }
         return Math.pow(Math.pow(x, 3) + 6, -1);
     }
 
-    private static double enterValue(InputStream input){
+    public static double enterValue(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextDouble();
     }

@@ -21,12 +21,12 @@ public class Task1 {
         System.out.println("The value of function = " + findValue(firstNumber, secondNumber, thirdNumber));
     }
 
-    private static double enterDouble(InputStream input){
+    public static double enterDouble(InputStream input){
         Scanner scan = new Scanner(input);
         return scan.nextDouble();
     }
 
-    private static double findValue(double a, double b, double c){
+    public static double findValue(double a, double b, double c){
         return ((a-3) * b / 2) + c;
     }
 }
